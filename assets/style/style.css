@@ -1,0 +1,178 @@
+.navbar-nav .nav-item .nav-link {
+    color: black;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+
+}
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-item:hover .nav-link,
+.navbar-nav .nav-item:visited .nav-link,
+.navbar-nav .nav-item:active .nav-link,
+.open>.dropdown-toggle.nav.item{
+    color: #ffcc22;
+}
+h1 {
+	font-family: 'Poppins', sans-serif;
+	font-size: 30px;
+	color: white;
+	font-weight: bold;
+}
+.lead , .harga {
+	color: white;
+	font-size: 30px
+}
+.harga {
+	color: #00A149;
+	font-weight: bold;
+}
+.lengko {
+	color: #ffcc22;
+}
+.lead {
+	color: #00A149;
+	font-weight: bold;
+}
+@media (min-width: 768px) {
+	.menu1 #menuacm2{
+		display: none;
+	}
+}
+@media (max-width: 768px) {
+	.display-4 {
+		text-align: center;
+	}
+	.lead {
+		text-align:center;
+		color: #00A149;
+	}
+	.btn-warning{
+		margin: 0 auto;
+		display: block;
+		position: relative;
+		margin-bottom: 20px;
+	}
+	.harga {
+		text-align: center;
+		color: #00A149;
+	}
+	.container #nasilengko{
+			order: 1;
+	}
+	.container #textnasilengko {
+		order: 2;
+	}
+	.hover-menu {
+	
+	background-color: #FFEFEF;
+	}
+	.hover-menu:hover {
+	
+	background-color: #ffcc22;
+	}
+	.fototentang {
+		width: 300px !important;
+		height: 310px;
+	}
+	.minuman {
+		margin-left: 200px;
+	}
+	#ragit {
+		order: 1;
+	}
+	#textragit {
+		order: 2;
+	}
+	.td img{
+		width: 10px;
+	}
+	.menu1 #menuacm{
+		display: none;
+	}
+	#card-img {
+		width: 100%;
+    	height: auto;
+	}
+}
+
+.info-panel {
+	box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+	border-radius: 12px;
+	margin-top: -62px;
+	background-color: #ffcc22;
+}
+.btn-warning {
+    color: #fff;
+    background-color: #ffcc22;
+    border-color: #ffcc22; 
+}
+.btn-light:hover, .btn-light:focus, .btn-light:active, .btn-light.active, .open>.dropdown-toggle.btn-light {
+    color: #fff;
+    background-color: #ffcc22;
+    border-color: #ffcc22; /*set the color you want here*/
+}
+.hover-menu {
+	width: 100%; height: 250px;
+	background-color: #FFEFEF;
+	transition: transform .2s;
+}
+.hover-menu:hover {
+	width: 100%; height: 250px;
+	background-color: #ffcc22;
+	transform: scale(1.0);
+}
+td {
+	padding: 20px;
+}
+table {
+	display: flex;
+	justify-content: center;
+}
+#kering,#kuah,#semua,#pedas,#asin,#minuman {
+	border-radius: 10px;
+}
+#card-img {
+	width: 100%;
+	height: auto;
+}
+.cart {
+	position: relative;
+	display: inline-block;
+}
+.product {
+	border: 1px solid #eaeaec;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  /* Modal Content/Box */
+  .modal-content {
+	background-color: #fefefe;
+	margin: 15% auto; /* 15% from the top and centered */
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%; /* Could be more or less, depending on screen size */
+  }
+  /* The Close Button */
+  .close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+  }
+  .close:hover,
+  .close:focus {
+	  color: black;
+	  text-decoration: none;
+	  cursor:pointer
+  }

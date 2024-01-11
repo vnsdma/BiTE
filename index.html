@@ -1,0 +1,539 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- My CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/style/style.css">
+    <!-- Font CSS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    
+    <title>Restoran</title>
+  </head>
+  <body>
+
+    <!-- Navbar -->
+
+<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-white">
+    <div class="container">
+        <a class="navbar-brand pr-5" href="index.html">
+            <img src="assets/img/bite.png" width="90">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Beranda <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="assets/detail/menu.html">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="assets/detail/tentang.html">Tentang</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="assets/detail/kontak.html">Kontak</a>
+                </li>
+            <div class="container pl-5">
+                <li class="nav-item">
+                    <a class="navbar-brand pr-5" href="#user">
+                        <img src="assets/img/user.svg" width="30">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="navbar-brand pr-5" href="#search">
+                        <img src="assets/img/search.svg" width="30">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <div class="cart" onclick="openCart()">
+                        <a class="navbar-brand" href="#search">
+                            <img src="assets/img/shopping-cart.svg" width="30">
+                            <span id="cartCount" class="badge">0</span>
+                        </a>
+                    </div>
+                    <div id="myModal" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+
+                            <ul id="cartItems"></ul>
+                        </div>
+                    </div>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+    <!-- Akhir Navbar -->
+
+    <!-- jumbotron -->
+<section class="banner">
+    <div class="jumbotron jumbotron-fluid bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 sm-order-2" id="textnasilengko">
+                    <h1 class="display-4 pt-5">Nasi <span class="lengko">Lengko</span></h1>
+                    <h2 class="lead">Per Porsi</h2>
+                    <br><p class="harga">RP 12.000</p>
+                    <a class="btn btn-warning btn-lg pb-2" id="button1" style="width:200px">Pesan Sekarang</a>
+                </div>
+                <div class="col-lg-6 ml-auto sm-order-1" id="nasilengko">
+                    <img src="assets/img/nasi-lengko.png" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- akhir jumbotron -->
+
+<div class="container">
+    
+    <!-- info panel -->
+    
+    <div class="row justify-content-center mb-5">
+        <div class="col-lg-2 info-panel" style="width:120px;height: 60px;">
+            <div class="row">
+                <div class="col-lg text-center">
+                    <h2 class="pt-2 lg">Menu</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- akhir info panel -->
+
+<!-- container -->
+<section class="menu1">
+    <div id="menuacm" class="container text-center">
+    <table>
+        <div id="menuacm" class="d-flex justify-content-center">
+        <tr>
+            <td><img src="assets/img/nasi-lengko.png" style="width: 100px;"></td>
+            <td><img src="assets/img/kuah.png" style="width: 80px;"></td>
+            <td><img src="assets/img/pedas.png" style="width: 80px;"></td>
+            <td><img src="assets/img/asin.png" style="width: 90px;"></td>
+            <td><img src="assets/img/cemilan.png" style="width: 90px;"></td>
+            <td><img src="assets/img/minuman.png" style="width: 70px;"></td>
+        </tr>
+        <tr>
+            <td>Kering</td>
+            <td>Kuah</td>
+            <td>Pedas</td>
+            <td>Asin</td>
+            <td>Cemilan</td>
+            <td>Minuman</td>
+        </tr>
+        </div>
+    </table>
+    </div>
+    <div id="menuacm2" class="container text-center">
+    <table>
+        <div class="d-flex justify-content-center">
+        <tr>
+            <td><img src="assets/img/nasi-lengko.png" style="width: 100px;"></td>
+            <td><img src="assets/img/kuah.png" style="width: 80px;"></td>
+            <td><img src="assets/img/pedas.png" style="width: 80px;"></td>
+        </tr>
+        <tr>
+            <td>Kering</td>
+            <td>Kuah</td>
+            <td>Pedas</td>
+        </tr>
+    </div>
+    </table>
+    <div id="menuacm2" class="container text-center">
+        <table>
+            <div class="d-flex justify-content-center">
+            <tr>
+                <td><img src="assets/img/asin.png" style="width: 90px;"></td>
+                <td><img src="assets/img/cemilan.png" style="width: 90px;"></td>
+                <td><img src="assets/img/minuman.png" style="width: 70px;"></td>
+            </tr>
+            <tr>
+                <td>Asin</td>
+                <td>Cemilan</td>
+                <td>Minuman</td>
+            </tr>
+        </div>
+        </table>
+</div>
+</section>
+
+<!-- akhir menu -->
+
+<!-- awal promo -->
+<section class="promo" id="promo">
+    <div class="container-fluid pt-5 pb-5 bg-light">
+        <div class="row justify-content-center">
+            <div class="col lg-10">
+                <div class="row lg">
+                    <div class="col-lg" style="background-color: white;">
+                        <img src="assets/img/promo1.png" style="width: 170px;" class="float-right pt-3 mr-3">
+                        <h5 class="card-text pt-5 pb-5"> Promo Selalu Berlaku </h5>
+                        <p> Nasi Lengko Khas Indramayu</p>
+                        <p style="color:#ffcc22">Rp 12.000</p>
+                    </div>
+                    <div class="col-lg" style="background-color: #00A149;">
+                        <img src="assets/img/promo2.png" style="width: 200px;" class="float-right pt-5">
+                        <h5 class="card-text pt-5 pb-5" style="color: white;"> Makanan Lainnya </h5>
+                        <p style="color: white;"> Perlu Dicoba !</p>
+                    </div>
+                    <div class="col-lg" style="background-color: white;"> 
+                        <img src="assets/img/map.png" style="width: 150px;" class="float-right pt-5">
+                        <h5 class="card-text pt-5 pb-5"> Temukan Bite Disekitar Anda </h5>
+                        <p><a href="assets/detail/kontak.html" style="text-decoration: none; color: #ffcc22;"> Kontak Kami </a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- akhir promo -->
+
+<!-- Makanan Populer -->
+
+<section class="tombol-menu" id="tombol-menu">
+    <div class="container">
+        <div class="row mb-4 pt-4 justify-content-center">
+            <div class="col text-center">
+                <h2>Makanan Populer</h2>
+            </div>
+        </div>
+        <div class="row pt-5">
+            <div class="col xs-10">
+                <div class="row justify-content-center button2">
+                    <div class="col-xs">
+                        <button class="btn btn-warning mr-5" id="semua">Semua</button>
+                    </div>
+                    <div class="col-xs">
+                        <button class="btn btn-light mr-5" id="kering">Kering</button>
+                    </div>
+                    <div class="col-xs">
+                        <button class="btn btn-light mr-5" id="kuah">Kuah</button>
+                    </div>
+                    <div class="col-xs">
+                        <button class="btn btn-light mr-5" id="pedas">Pedas</button>
+                    </div>
+                    <div class="col-xs">
+                        <button class="btn btn-light mr-5" id="asin">Asin</button>
+                    </div>
+                    <div class="col-xs">
+                        <button class="btn btn-light mr-5" id="minuman">Minuman</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- akhir button -->
+
+<!-- awal menu -->
+
+<section class="menu-populer" id="menu-populer">
+    <div class="container pt-5">
+        <div class="row">
+            <div class="col lg-10">
+                <div class="card-deck">
+                    <div class="card text-center koci-hover">
+                        <div class="hover-menu">
+                            <img id="card-img" class="card-img-top img-fluid" src="assets/img/burbacek.png" alt="Card image cap" style="width: 250px;">
+                        </div>
+                        <div class="card-body"> 
+                            <h5 class="card-title pt-5">Burbacek</h5>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                            <p class="card-text text-left" style="color: #ffcc22;">RP. 1.000</p>
+                        </div>
+                    </div>
+                    <div class="card text-center koci-hover">
+                        <div class="hover-menu">
+                            <img class="card-img-top" src="assets/img/koci.png" alt="Card image cap">
+                        </div>
+                        <div class="card-body"> 
+                        <h5 class="card-title pt-5">Koci</h5>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                            <p class="card-text text-left" style="color: #ffcc22;">RP. 1.000</p>
+                        </div>
+                    </div>
+                    <div class="card text-center koci-hover">
+                        <div class="hover-menu">
+                            <img class="card-img-top img-fluid" src="assets/img/blendung.png" alt="Card image cap" style="width: 180px;">
+                        </div>
+                        <div class="card-body"> 
+                            <h5 class="card-title pt-5">Blendung Jagung</h5>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                            <p class="card-text text-left" style="color: #ffcc22;">RP. 1.000</p>
+                        </div>
+                    </div>
+                </div>                    
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="menu-populer" id="menu-populer">
+    <div class="container pt-5">
+        <div class="row">
+            <div class="col lg-10">
+                <div class="card-deck">
+                    <div class="card text-center koci-hover">
+                        <div class="hover-menu">
+                            <img class="card-img-top img-fluid" src="assets/img/blengep.png" alt="Card image cap" style="width: 170px;">
+                        </div>
+                        <div class="card-body"> 
+                            <h5 class="card-title pt-5">Blengep Cotot</h5>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                            <p class="card-text text-left" style="color: #ffcc22;">RP. 1.000</p>
+                        </div>
+                    </div>
+                    <div class="card text-center koci-hover">
+                        <div class="hover-menu">
+                            <img class="card-img-top img-fluid" src="assets/img/nasilengko.png" alt="Card image cap" style="width: 200px;">
+                        </div>
+                        <div class="card-body"> 
+                            <h5 class="card-title pt-5">Nasi Lengko</h5>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                            <p class="card-text text-left" style="color: #ffcc22;">RP. 1.000</p>
+                        </div>
+                    </div>
+                    <div class="card text-center koci-hover">
+                        <div class="hover-menu">
+                            <img class="card-img-top img-fluid" src="assets/img/foto-ragit.png" alt="Card image cap" style="width: 180px;">
+                        </div>
+                        <div class="card-body"> 
+                            <h5 class="card-title pt-5">Mie Ragit</h5>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                            <p class="card-text text-left" style="color: #ffcc22;">RP. 1.000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row text-center mt-5">
+                    <div class="col lg mb-5">
+                        <button class="btn btn-warning"> Semua Produk</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- akhir menu -->
+
+<!-- promo ragit -->
+<section class="banner">
+    <div class="jumbotron jumbotron-fluid bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 sm-order-2" id="textnasilengko">
+                    <h1 class="display-4 pt-5">Mie Ragit<h2 class="lead">Mie Khusus Bulan Ramadhan</h2>
+                </div>
+                <div class="col-lg-6 ml-auto sm-order-1" id="nasilengko">
+                    <img src="assets/img/foto-ragit.png" style="width: 350px;" class="img-fluid">
+                </div>
+            </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+    </div>
+</section>
+
+<section class="resep">
+    <div class="container">
+        <div class="mb-4 pt-4 justify-content-center">
+            <div class="col text-center">
+                <h2>Resep Terbaik</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="product card mb-3" style="max-width: 540px; max-height: 310px;">
+                            <div class="row no-gutters">
+                                <div class="col-lg-12">
+                                    <img src="assets/img/esteh.png" alt="..." class="img-fluid">
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Es Teh</h5>
+                                        <p class="card-text">Lorem Ipsum dolor sit amet</p>
+                                        <img onclick="addToCart('Es Teh')" id="click" src="assets/img/cart.png" class="float-right pb-2" style="width: 40px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>          
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="product card mb-3" style="max-width: 540px; max-height: 310px;">
+                            <div class="row no-gutters">
+                                <div class="col-lg-12">
+                                    <img src="assets/img/burbacek.png" style="max-width:225px;">
+                                </div>
+                            <div class="col-lg-12">
+                                <div class="card-body">
+                                    <h5 class="card-title">Burbacek</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet<p>
+                                    <img onclick="addToCart('Burbacek')" id="click" src="assets/img/cart.png" class="float-right pb-2 mb-2" style="width: 40px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card mb-3" style="max-width: 540px; max-height: 310px;">
+                        <div class="row no-gutters">
+                            <div class="col-lg-12">
+                                <img src="assets/img/foto-ragit.png" style="max-width:190px;">
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="card-body">
+                                    <h5 class="card-title">Mie Ragit</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet<p>
+                                    <img onclick="addToCart('Mie Ragit')" id="click" src="assets/img/cart.png" class="float-right pb-2 mb-2" style="width: 40px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1">
+                <div class="banner-promo col-lg-12">
+                    <img src="assets/img/banner.png" style="width: 230px;">
+                </div>
+            </div>
+    </div>
+                    
+</section>
+
+<footer>
+    <div class="container-fluid bg-dark pt-5 mt-5">
+        <div class="image text-center pt-5">
+            <img src="assets/img/bite footer.png">
+        </div>
+        <div class="container">
+            <div class="row justify-content-center pt-5 pb-5">
+                <div class="col lg-5">
+                    <h1>Alamat</h1>
+                    <h4 style="color: white;">Jl. Kihiur No 10 <br> Cihapit Kec <br>  Bandung Wetan </h4>
+                </div>
+                <div class="col-lg-4">
+                    <h1>Jadwal Buka</h1>
+                    <h4 style="color: white;">Senin - Jum'at <br>8 Pagi - 10 Malam<br>  Bandung Wetan </h4>
+                </div>
+                <div class="col-lg-3">
+                    <h1>Social Media</h1>
+                    <img src="assets/img/facebook.png">
+                    <img src="assets/img/instagram.png">
+                    <img src="assets/img/youtube.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-success pt-3 pb-5">
+    <h6>Copyright © 2021 bitefood. All Right Reserved</h6>
+    <img src="assets/img/footerimg.png" class="float-right pb-auto">
+    </div>
+</footer>
+<script>
+    var cartCount = 0;
+
+function addToCart(product) {
+  cartCount++;
+  document.getElementById('cartCount').innerHTML = cartCount;
+  alert("Berhasil Ditambahkan ke Keranjang");
+
+  var li = document.createElement("li");
+  li.appendChild(document.createTextNode(product));
+  document.getElementById("cartItems").appendChild(li);
+}
+
+var modal = document.getElementById("myModal");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+function openCart() {
+   modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+   modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+   if (event.target == modal) {
+       modal.style.display = "none";
+   }
+}
+</script>
+    <!-- <script>
+        // add count to cart
+        var count = 0;
+        function clicks() {
+        count += 1;
+        document.getElementById("cart").innerHTML = clicks;
+        alert("Berhasil Ditambahkan ke Keranjang");
+        }
+
+        
+
+        // add badge to cart
+    
+    </script> -->
+    <!-- <script type="text/javascript">
+    var clicks = 0;
+    document.getElementById("cart").addEventListener("click", function() {
+    alert("Berhasil Ditambahkan ke Keranjang");
+    clicks += 1;
+    document.getElementById("cart").innerHTML = clicks;
+    
+    })
+
+    // add badge to cart
+
+    </script> -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <s
+    <div class="card mb-3" style="max-width: 540px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="..." alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+</div>cript src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
